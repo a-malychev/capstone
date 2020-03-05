@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* Add your custom CSS declarations below  */
+
+.navbar {
+	background-color: aqua;
+}
+
+h1 {
+	justify-content: center;
+}
