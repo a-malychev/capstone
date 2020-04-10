@@ -2,12 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <title>Critter Net</title>
 
 <!-- Bootstrap v4 -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
@@ -18,6 +19,8 @@
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js">
 </script>
+	
+<!--checkout-->
 
 </head>
 
@@ -34,10 +37,10 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
-	  <li class="nav-item">
+	  <li class="nav-item active">
         <a class="nav-link" href="cart.html">Cart</a>
       </li>
       <li class="nav-item dropdown">
@@ -58,60 +61,33 @@
   </div>
 </nav>
 <!-- END OF NAV-->
+	
+<!-- CODE FOR CHECKOUT-->
 
-<!-- Row 1 - Critter Net-->
-<div class="row row1">
-	<div class="col-12">
-	<h1><b>Critter Net</b></h1>
-	<h2>A new way to gather data.</h2>
-	<p><a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-       <a href="cart.html" class="btn btn-lg btn-secondary">Buy Now</a>
-	</p>
-	</div>	
+<!-- breacrumb-->
+<div class="container">
+<div class="row breadcrumbs">
+	<p><a href="cart.html">Cart</a> &gt; <a href="checkout.html">Shipping &amp; Billing</a> &gt; <a href="confirm.html"><u>Confirmation</u></a> &gt; Create Account</p>	
 </div>
-<!-- END OF ROW 1 -->
+ <!-- end of breadcrumbs-->
 	
-<!-- Row 2 - Map -->
-<div class="row row2">
-     <div class="col-12">
-	 <h3><b>See Who Else is Doing Research</b></h3>
-	 <div id="map" style="width: 1200px; height: 400px; margin:0 auto;"></div>
-     <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiYWxpc2FtYWx5IiwiYSI6ImNrN3dmcDZmczAxdHgzb2tiZmI3a3RidDYifQ.4u1bTZs5PU86rq81TxBQBQ';
-      var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11'
-      });
-     </script>
-	 </div>
+<!-- Thank you-->
+<div class="row">
+	<h1>Thank you for your order!</h1>
 </div>
-<!-- END OF ROW 2 - MAP-->
-	
-<!-- ROW 3 Marketing-->
-<div class="row row3">
-	<div class="col-6 block1">
-	<h4><b>Get accurate results</b></h4>
-	<img src="images/1.png" alt="bullseye" style="max-height:210px">
-	</div>
-	<div class="col-6 block2">
-	<h4><b>Stay in touch with your peers</b></h4>
-	<img src="images/2.png" alt="peers" style="max-height:200px">
-	</div>
+<div class="row">
+	<p>Your receipt has been emailed to @user email. <br>
+	Please continue on to make an account so that you can start using your new research box.</p>
 </div>
-<!-- END OF ROW 3-->
-	
-<!-- ROW 4 More Marketing-->
-<div class="row row4">
-	<div class="col-6 block3">
-	<img src="images/3.png" alt="picture of a rodent" style="max-height:200px; margin-top:80px">
-	</div>
-	<div class="col-6 block4">
-	<h4><b>Visualize your data</b></h4>
-	<img src="images/4.png" alt="charts on paper" style="max-height:250px">
-	</div>
+<div class="row">
+	<a href="createacc.html"><button class="btn btn-primary btnpurchase"><b>Create an Account</b></button></a>
 </div>
-<!-- END OF ROW 4-->
+<div class="row">
+<p>Already have an account? <a href="login.html">Log In</a><br><br><br></p>
+</div>
+
 	
+</div>
 <!-- Footer-->
 <footer>
 	<div class="inner">
@@ -119,6 +95,7 @@
     </div>
 </footer>
 <!-- END OF FOOTER-->
+
 
 
 <!-- jQuery and Bootstrap links - do not delete! -->

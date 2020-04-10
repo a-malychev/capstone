@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Critter Net</title>
+
+<!-- Bootstrap v4 -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+	
+<!-- Map-->
+ 
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js">
+</script>
+	
+<!--cart-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- INSERT HTML PAGE CONTENT HERE -->
+	
+<!-- Nav Bar-->	
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" style="max-height:50px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="#">Cart</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Profile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="login.html">Log In</a>
+          <a class="dropdown-item" href="join.html">Join a Project</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- END OF NAV-->
+	
+<!-- breacrumb-->
+<div class="container">
+<div class="row breadcrumbs">
+	<p><a href="cart.html"><u>Cart</u></a> &gt; Shipping &amp; Billing &gt; Confirmation &gt; Create Account</p>	
+</div>
+
+ <!-- end of breadcrumbs-->
+	
+<div class="row bootstrap snippets cart">
+    <div class="clearfix visible-sm"></div>
+
+    <!-- Cart -->
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-10 col-sm-12">
+            <span class="title">SHOPPING CART</span>
+        </div>
+        <div class="col-lg-10 col-sm-12 hero-feature">
+            <div class="table-responsive">
+                <table class="table table-bordered tbl-cart">
+                    <thead>
+                        <tr>
+                            <td class="hidden-xs">Image</td>
+                            <td>Product Name</td>
+                            <td class="td-qty">Quantity</td>
+                            <td>Unit Price</td>
+                            
+                            <td>Remove</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="hidden-xs">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/200x200/" alt="Age Of Wisdom Tan Graphic Tee" title="" width="47" height="47">
+                                </a>
+                            </td>
+                            <td><a href="#">Critter Net Research Box</a>
+                            </td>
+                           
+                            <td>
+                                <div class="input-group bootstrap-touchspin"><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-down" type="button">-</button></span><span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span><input type="text" name="" value="1" class="input-qty form-control text-center" style="display: block;"><span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-up" type="button">+</button></span></div>
+                            </td>
+                            <td class="price">$ 122.21</td>
+                            <td class="text-center">
+                                <a href="#" class="remove_cart" rel="2">
+                                    <i class="fa fa-trash-o"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" align="right">Sub Total</td>
+                            <td class="total" colspan="2"><b>$ 122.21</b>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn col-12">
+                <button type="button" class="btn btncart btn-primary"><a href="checkout.html">Checkout</a> <i class="fa fa-arrow-circle-right"></i></button>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Cart -->
+	</div>
+</div>	
+	
+<!-- Footer-->
+<footer>
+	<div class="inner">
+       <p>&copy; Critter Net Inc</p>
+    </div>
+</footer>
+<!-- END OF FOOTER-->
+
+
+<!-- jQuery and Bootstrap links - do not delete! -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- end of do not delete -->
+</body>
+</html>
