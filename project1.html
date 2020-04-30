@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta name="description" content="Critter Net Specific Project Page">
+  <meta name="author" content="alisa malychev">
+<title>Day Capstone Class</title>
+
+<!-- Bootstrap v4 -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+
+	
+<!-- Font Awesome Code-->
+<script src="https://kit.fontawesome.com/d336046dd3.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+<!-- INSERT HTML PAGE CONTENT HERE -->
+	
+<!-- Nav Bar-->	
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" style="max-height:50px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="cart.html">Cart</a>
+      </li>
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Profile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="login.html">Log In</a>
+          <a class="dropdown-item" href="join.html">Join a Project</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- END OF NAV-->
+	
+<!-- Side navigation -->
+<div class="sidenav">
+  <a href="profile.html">My Profile</a>
+  <a href="projects.html" class="activesidenav">Projects</a>
+  <a href="#">Inbox</a>
+  <a href="#">Forum</a>
+  <a href="#">Help</a>
+</div>
+
+<!-- Page content -->
+<div class="projinner">
+	<h4><a href="projects.html"><i class="fas fa-arrow-circle-left"></i></a>  Day Capstone Class</h4>
+	<p><b>Unit Name:</b> 123XVTvR45<br>
+	<b>Manufacturer ID:</b> SY0997NP36TTIK</p>
+	<br>
+	<p><b>Unit Location:</b> 40° 41′ 21.4” N   74° 02′ 40.2” W (DMS)</p>
+	<img src="images/mapzoom.png" alt="map location of box" style="max-height: 300px;">
+	<img src="images/map.png" alt="US map of box locations" style="max-height: 300px">
+
+<!-- Expandable Menu 1-->
+  <p style="margin-top:50px;"><b>Data points</b></p>
+  <div id="grandparent" class="list-group-item">
+    <div id="expander" data-toggle="collapse" data-target="#grandparentContent" data-role="expander" data-group-id="grandparent">
+        <ul class="list-inline">
+            <li id="grandparentIcon">Data Collected at <b>5:45 on 2/27/20</b> <i class="fas fa-chevron-down"></i></li>
+        </ul>
+    </div>
+
+    <div class="collapse" id="grandparentContent" aria-expanded="true" role="article">
+      <table class="table">
+        <thead class="mbhead">
+          <tr class="mbrow">
+            <th class="lightb">Criteria</th>
+			<th>Data Collected</th>
+			<th class="lightb">Criteria</th>
+			<th>Data Collected</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr data-toggle="collapse">
+            <td class="lightb">Specimen Weight</td>
+            <td>2.1 pounds</td>
+			<td class="lightb">Genus</td>
+            <td><input type="text" class="form-control" id="genus" placeholder="" value="" required></td>
+          </tr>
+			
+          <tr data-toggle="collapse">
+            <td class="lightb">Temperature</td>
+            <td>23.889 degrees Celsius</td>
+			<td class="lightb">Common Name</td>
+            <td><input type="text" class="form-control" id="firstName" placeholder="" value="" required></td>
+          </tr>
+			
+		  <tr data-toggle="collapse">
+            <td class="lightb">Humidity</td>
+            <td>70%</td>
+			<td class="lightb">Gender</td>
+            <td><input type="text" class="form-control" id="gender" placeholder="" value="" required></td>
+          </tr>
+			
+		  <tr data-toggle="collapse">
+            <td class="lightb">Length</td>
+            <td><input type="text" class="form-control" id="length" placeholder="" value="" required></td>
+			<td class="lightb">Notes</td>
+			<td><input type="text" class="form-control" id="notes" placeholder="" value="" required></td>
+          </tr>
+          
+        </tbody>
+      </table>
+	<button id="saveButton">Save Edits</button>
+	<br>
+	<!-- Images-->
+	<br>
+	<p><b>Images Taken</b></p>
+	<div class="row">
+	<div class="col-4"><img src="images/vid1.jpg" style="max-height:200px;" alt="critter pic"></div>
+    <div class="col-4"><img src="images/vid2.jpg" style="max-height:200px;" alt="critter pic"></div></div>
+	<div class="row" style="margin-top:5px;">
+	<div class="col-2"><p><i class="fas fa-folder-plus"></i> Add to Album</p></div>
+	<div class="col-2"><p><i class="fas fa-hashtag"></i> Tag the Image</p></div>
+	<div class="col-2"><p><i class="fas fa-folder-plus"></i> Add to Album</p></div>
+	<div class="col-2"><p><i class="fas fa-hashtag"></i> Tag the Image</p></div>
+	</div>
+	<div class="row">
+		<div class="col-4"><p><i class="fas fa-trash-alt"></i> Delete</p></div>
+		<div class="col-4"><p><i class="fas fa-trash-alt"></i> Delete</p></div>	
+	</div>
+    </div>
+<script>
+
+$('.collapse').on('show.bs.collapse', function () {
+  var groupId = $('#expander').attr('data-group-id');
+  console.log(groupId);
+  if (groupId) {
+    $('#grandparentIcon').html('>');
+  }
+});
+
+$('.collapse').on('hide.bs.collapse', function () {
+  var groupId = $('#expander').attr('data-group-id');
+  console.log(groupId);
+  if (groupId) {
+    $('#' + groupId + 'Icon').html('v');
+  }
+});
+</script>
+</div>		  
+<!-- Expandable Menu 2-->
+<div id="grandparent2" class="list-group-item">
+    <div id="expander2" data-toggle="collapse" data-target="#grandparentContent2" data-role="expander" data-group-id="grandparent2">
+        <ul class="list-inline">
+            <li id="grandparentIcon2">Data Collected at <b>3:00 on 2/24/20</b> <i class="fas fa-chevron-down"></i></li>
+        </ul>
+    </div>
+
+    <div class="collapse" id="grandparentContent2" aria-expanded="true" role="article">
+      <table class="table">
+        <thead class="mbhead">
+          <tr class="mbrow">
+            <th class="lightb">Criteria</th>
+			<th>Data Collected</th>
+			<th class="lightb">Criteria</th>
+			<th>Data Collected</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr data-toggle="collapse">
+            <td class="lightb">Specimen Weight</td>
+            <td>2.1 pounds</td>
+			<td class="lightb">Genus</td>
+            <td><input type="text" class="form-control" id="genus2" placeholder="" value="" required></td>
+          </tr>
+			
+          <tr data-toggle="collapse">
+            <td class="lightb">Temperature</td>
+            <td>23.889 degrees Celsius</td>
+			<td class="lightb">Common Name</td>
+            <td><input type="text" class="form-control" id="firstName2" placeholder="" value="" required></td>
+          </tr>
+			
+		  <tr data-toggle="collapse">
+            <td class="lightb">Humidity</td>
+            <td>70%</td>
+			<td class="lightb">Gender</td>
+            <td><input type="text" class="form-control" id="gender2" placeholder="" value="" required></td>
+          </tr>
+			
+		  <tr data-toggle="collapse">
+            <td class="lightb">Length</td>
+            <td><input type="text" class="form-control" id="length2" placeholder="" value="" required></td>
+			<td class="lightb">Notes</td>
+			<td><input type="text" class="form-control" id="notes2" placeholder="" value="" required></td>
+          </tr>
+          
+        </tbody>
+      </table>
+	<button id="saveButton2">Save Edits</button>
+	<br>
+	<!-- Images-->
+	<br>
+	<p><b>Images Taken</b></p>
+	<div class="row">
+	<div class="col-4"><img src="images/vid1.jpg" style="max-height:200px;" alt="critter pic"></div>
+    <div class="col-4"><img src="images/vid2.jpg" style="max-height:200px;" alt="critter pic"></div></div>
+	<div class="row" style="margin-top:5px;">
+	<div class="col-2"><p><i class="fas fa-folder-plus"></i> Add to Album</p></div>
+	<div class="col-2"><p><i class="fas fa-hashtag"></i> Tag the Image</p></div>
+	<div class="col-2"><p><i class="fas fa-folder-plus"></i> Add to Album</p></div>
+	<div class="col-2"><p><i class="fas fa-hashtag"></i> Tag the Image</p></div>
+	</div>
+		<div class="row">
+		<div class="col-4"><p><i class="fas fa-trash-alt"></i> Delete</p></div>
+		<div class="col-4"><p><i class="fas fa-trash-alt"></i> Delete</p></div>	
+	</div>
+    </div>
+<script>
+
+$('.collapse').on('show.bs.collapse', function () {
+  var groupId = $('#expander2').attr('data-group-id');
+  console.log(groupId);
+  if (groupId) {
+    $('#grandparentIcon2').html('>');
+  }
+});
+
+$('.collapse').on('hide.bs.collapse', function () {
+  var groupId = $('#expander2').attr('data-group-id');
+  console.log(groupId);
+  if (groupId) {
+    $('#' + groupId + 'Icon').html('v');
+  }
+});
+</script>	
+	  </div>
+	  
+<!-- end of child-->
+
+<br>
+<p><b>Albums</b></p>
+<!-- Gallery-->
+<div class="row" style="margin-left:0px;">
+<div class="gallery">
+  <a target="_blank" href="">
+    <img src="images/vid3.jpg" alt="rodent" width="600" height="400">
+  </a>
+  <div class="desc">Mouse A "Charlie"</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="">
+    <img src="images/vid1.jpg" alt="rodent" width="600" height="400">
+  </a>
+  <div class="desc">Mouse A Videos</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="">
+    <img src="images/critter3.jpg" alt="rodent" width="600" height="400">
+  </a>
+  <div class="desc">Rodent B "Jenny"</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="">
+    <img src="images/vid2.jpg" alt="rodent" width="600" height="400">
+  </a>
+  <div class="desc">Rodent B Videos</div>
+</div>
+	
+<div class="gallery">
+  <a target="_blank" href="">
+    <img src="images/vid3.jpg" alt="all photos" width="600" height="400">
+  </a>
+  <div class="desc">All Raw Photos and Videos</div>
+</div>
+	
+	</div>
+	<!-- end of gallery-->
+	<p><i class="fas fa-plus-circle"></i> <b>New Album</b></p>
+
+
+
+</div>
+	
+	
+<!-- Footer-->
+<footer>
+	<div class="inner">
+       <p>&copy; Critter Net Inc</p>
+    </div>
+</footer>
+<!-- END OF FOOTER-->
+	
+
+<!-- jQuery and Bootstrap links - do not delete! -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- end of do not delete -->
+</body>
+</html>

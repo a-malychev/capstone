@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-<meta name="description" content="Critter Net Create An Account Page">
+<meta name="description" content="Critter Net Set Up Project">
   <meta name="author" content="alisa malychev">
-<title>Create An Account</title>
+<title>Set Up Project</title>
 
 <!-- Bootstrap v4 -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
@@ -15,6 +15,9 @@
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+	
+<!-- Font Awesome Code-->
+<script src="https://kit.fontawesome.com/d336046dd3.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -23,7 +26,7 @@
 <!-- INSERT HTML PAGE CONTENT HERE -->
 	
 <!-- Nav Bar-->	
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
   <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" style="max-height:50px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -34,10 +37,10 @@
       <li class="nav-item">
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
-	  <li class="nav-item active">
+	  <li class="nav-item">
         <a class="nav-link" href="cart.html">Cart</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item active dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Profile
         </a>
@@ -56,70 +59,68 @@
 </nav>
 <!-- END OF NAV-->
 	
-<!-- CODE FOR CHECKOUT-->
-
-<!-- breacrumb-->
-<div class="container">
-<div class="row breadcrumbs">
-	<p><a href="cart.html">Cart</a> &gt; <a href="checkout.html">Shipping &amp; Billing</a> &gt; <a href="confirm.html">Confirmation</a> &gt; <a href="createacc.html"><u>Create Account</u></a></p>	
+<!-- Side navigation -->
+<div class="sidenav">
+  <a href="profile.html">My Profile</a>
+  <a href="projects.html" class="activesidenav">Projects</a>
+  <a href="#">Inbox</a>
+  <a href="#">Forum</a>
+  <a href="#">Help</a>
 </div>
- <!-- end of breadcrumbs-->
-	
-<!-- Thank you-->
-<div class="col-md-8">
-          <h4 class="mb-3">Create an account to begin using your new purchase.</h4>
-          <form class="needs-validation" novalidate>
+
+<!-- Page content -->
+<div class="projinner">
+	<h4><a href="projects.html"><i class="fas fa-arrow-circle-left"></i></a>  Create Your Project</h4>
+	<form class="needs-validation" novalidate>
             <div class="row">
               <div class="col-md-6 mb-3">
-                <label for="firstName">First name</label>
+                <label for="firstName"><b>Project Name</b></label>
                 <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
               </div>
+		</div>
+		
+		 <div class="row">
               <div class="col-md-6 mb-3">
-                <label for="lastName">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="email">Box Code <span class="text-muted">(Found on Receipt Email)</span></label>
-              <input type="text" class="form-control" id="email" placeholder="XY768HD9">
-              <div class="invalid-feedback">
-                Please enter a valid code.
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="address">Username</label>
-              <input type="text" class="form-control" id="address" >
-              <div class="invalid-feedback">
-                Please enter your shipping address.
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="password1">Password <span class="text-muted"><i>(Must include at least 5 characters, one number, and one capital letter.)</i></span></label>
-              <input type="text" class="form-control" id="password1">
-            </div>
-			  
-			<div class="mb-3">
-              <label for="password2">Confirm Password</label>
-              <input type="text" class="form-control" id="password2">
-            </div>
-	</form>
-	<div class="row offset-9">
-	<a href="projects.html" class="btn btn-primary btnpurchase"><b>Create my Account</b></a>
-	</div>
-			  
-	</div>
-
-	
+                <label for="firstName"><b>Who is the Admin of this project?</b></label>
+<!-- Default unchecked -->
+<div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+    <label class="custom-control-label" for="defaultUnchecked">Me</label>
 </div>
+<div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
+    <label class="custom-control-label" for="defaultUnchecked">Someone Else:</label>
+</div>
+				  <input type="text" class="form-control" id="addadmin" placeholder="their email" value="" required>
+              </div>
+		</div>
+		
+		<div class="row">
+              <div class="col-md-6 mb-3">
+				  <label><b>Not working alone?</b></label> 
+				  <p>Email teamates an access code to either view only or edit as well</p>
+				  
+				 <div class="col-md-12 mb-3">
+                <label for="firstName">Send Edit Code</label>
+                <input type="text" class="form-control" id="edit" placeholder="emails" value="" required>
+                 </div>
+				  
+				   <div class="col-md-12 mb-3">
+                <label for="firstName">Send View Code</label>
+                <input type="text" class="form-control" id="view" placeholder="emails" value="" required>
+                 </div>
+				 
+				  <a href="projects.html" class="btn btn-secondary btnpurchase"><b>Create</b></a> 
+				   
+             
+              </div>
+		</div>
+				</form>
+	
+</div>	
+	
+	
+	
 <!-- Footer-->
 <footer>
 	<div class="inner">
@@ -127,8 +128,7 @@
     </div>
 </footer>
 <!-- END OF FOOTER-->
-
-
+	
 
 <!-- jQuery and Bootstrap links - do not delete! -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

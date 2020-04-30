@@ -21,20 +21,20 @@
 .row1 {
 	text-align:center;
 	min-height: 500px;
-	background-color:#000000;
-	padding-top: 150px;
+	background-color:#FFFFFF;
+	padding-top: 100px;
 }
 
 h1 {
 	font-family: 'Libre Baskerville', serif;
 	font-size: 36px;
-	color: #ffffff;
+	color: #000000;
 }
 
 h2 {
 	font-family: 'open sans', sans-serif;
 	font-size:20px;
-	color: #ffffff;
+	color: #000000;
 }
 
 h3 {
@@ -72,13 +72,13 @@ h4 {
 .row3 {
 	text-align: center;
 	min-height: 250px;
-	max-height:300px;
+	max-height:500px;
 }
 
 .row4 {
 	text-align: center;
 	min-height: 250px;
-	max-height:300px;
+	max-height:500px;
 }
 
 .block1 {
@@ -91,11 +91,12 @@ h4 {
 	background-color: #339999;
 	padding-top: 30px;
 	color: #FFFFFF;
-	max-height:300px;
+	max-height:500px;
 }
 
 .block3 {
 	background-color: #d3ebd5;
+	padding-top:30px;
 }
 
 .block4 {
@@ -144,8 +145,13 @@ footer {
 	border-color: #d3ebd5;
 }
 
+.btn-login:hover {
+	background-color: #A9E1E3;
+	border-color: #A9E1E3;
+}
+
 .dropdown-item:active {
-	background-color:a9e1e3;
+	background-color: #a9e1e3;
 }
 
 label {
@@ -211,7 +217,7 @@ a:hover {
 }
 .table thead > tr > th > a span:after {
 	content: "\f0dc";
-	font-family: FontAwesome;
+	font-family: 'open sans', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: inherit;
@@ -375,10 +381,96 @@ a:hover {
 }
 
 .btnpurchase:hover {
-	background-color: #A9E1E3;
-	border-color: #A9E1E3;
+	background-color: #A9E1E3!important; 
+	border-color: #A9E1E3!important; 
 }
 
+/* SIDE NAVIGATION*/
+
+.projinner {
+  font-family: 'open sans', sans-serif;
+  padding: 30px;
+  margin-left: 150px;
+}
+
+.sidenav {
+  height: 90%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  left: 0;
+  background-color: #D3EBD5;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.activesidenav {
+	background-color: grey;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*BACK BUTTON*/
+
+.fa-arrow-circle-left {
+	font-size: 25px;
+	color: #000;
+	margin-bottom:20px;
+}
+
+/*gallery*/
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/*all projects page*/
+.classbox {
+	max-height:150px;
+}
+
+/* LIGHT BLUE TABLE COLOR ON PROJECT PAGE*/
+.lightb {
+	background-color: #a9e1e3!important;
+}
 
   
 
